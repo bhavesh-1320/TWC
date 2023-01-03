@@ -1,0 +1,47 @@
+<template>
+    <lightning-card>
+            <lightning-tabset active-tab-value={answer}>
+                <lightning-tab label="PPA" value="PPA">
+                    
+
+                    <lightning-record-form
+                            record-id={ppaId}
+                            object-api-name="PPA__c"
+                            columns="2"
+                            mode={PPA}
+                            layout-type="Full">
+                     </lightning-record-form>
+                </lightning-tab>
+                <lightning-tab label="DDA" title="2nd tab extended title" value="DDA">
+                    
+                    <lightning-record-form
+                            record-id={ddaId}
+                            object-api-name="DDA__c"
+                            columns="2"
+                            mode={DDA}
+                            layout-type="Full">
+                    </lightning-record-form>
+                </lightning-tab>
+                <lightning-tab label="Construction" value="Construction">
+                   
+                    <lightning-record-form
+                            record-id={constructionId}
+                            object-api-name="Construction__c"
+                            columns="2"
+                            mode={Construction}
+                            layout-type="Full">
+                     </lightning-record-form>
+                </lightning-tab>
+                <lightning-tab label="Warranty" value="Warranty">
+                    
+                    <lightning-record-form
+                            record-id={warrantyId}
+                            object-api-name="Contract"
+                            columns="2"
+                            mode={Warranty}
+                            layout-type="Full">
+                     </lightning-record-form>
+                </lightning-tab>
+            </lightning-tabset>
+    </lightning-card>
+</template>
